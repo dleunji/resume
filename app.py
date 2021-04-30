@@ -19,7 +19,7 @@ class TextGenerationOutput(BaseModel):
     Text_Output_2 : str
     Text_Output_3 : str
 
-def Generate_Resume(input: TextGenerationInput)-> TextGenerationOutput:
+def generate_resume(input: TextGenerationInput)-> TextGenerationOutput:
     encoded = autoTokenizer.encode(input.Text_Input)
     data = {
         'text' : encoded,
