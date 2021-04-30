@@ -1,44 +1,37 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 import requests, json
 from transformers import AutoTokenizer
 
-import os
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
 autoTokenizer = AutoTokenizer.from_pretrained("gpt2-large")
 url = 'https://train-an3ugzje9rw5ysaeq3s0-gpt2-train-teachable-ainize.endpoint.ainize.ai/predictions/gpt-2-en-medium-finetune'
 
 class TextGenerationInput(BaseModel):
-    text : str
-    length : int
+    Text_Input : str
+    Length : int = Field(
+        10,
+        ge=5,
+        le=30,
+        descrption = "The length of the sequence to be generated"
+    )
 
 class TextGenerationOutput(BaseModel):
-    text : str
+    Text_Output_1 : str
+    Text_Output_2 : str
+    Text_Output_3 : str
 
-def gen_resume(input: TextGenerationInput)-> TextGenerationOutput:
-    encoded = autoTokenizer.encode(input.text)
+def Generate_Resume(input: TextGenerationInput)-> TextGenerationOutput:
+    encoded = autoTokenizer.encode(input.Text_Input)
     data = {
         'text' : encoded,
-        'length' : input.length
+        'length' : input.Length,
+        'num_samples' : 3
     }
     response = requests.post(url, data = json.dumps(data) , headers = {"Content-Type":'application/json; charset=utf-8'})
     if response.status_code == 200:
+        text = dict()
         res = response.json()
-        return TextGenerationOutput(text = autoTokenizer.decode(res[0], skip_special_tokens = True))
+        for idx, output in enumerate(res):
+            text[idx] = autoTokenizer.decode(res[idx], skip_special_tokens = True)
+        return TextGenerationOutput(Text_Output_1 = text[0], Text_Output_2 = text[1], Text_Output_3 = text[2])
     else:
         return TextGenerationOutput(text = response.status_code)
-
-
-# #Interact with FastAPI endpoint
-# backend = 'http://localhost:8501/generate'
-# #Encode the prefix and Request
-# def process(text: str, backend :str, length : int):
-#     res = requests.post(backend,)
-
-# st.title('Résumé for SW Developers 📄')
-# st.write("""It is Résumé Generator. """)
-# length = st.number_input('Enter a length', min_value = 1, max_value=200, value=5)
-# prefix = st.text_input('Enter some text')
-
-# if st.button('Generate Résumé sentence'):
-#     generated_text = server.process(text, backend, length)
-#     st.write(generated_text)
