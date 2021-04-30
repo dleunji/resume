@@ -34,4 +34,4 @@ def generate_resume(input: TextGenerationInput)-> TextGenerationOutput:
             text[idx] = autoTokenizer.decode(res[idx], skip_special_tokens = True)
         return TextGenerationOutput(Text_Output_1 = text[0], Text_Output_2 = text[1], Text_Output_3 = text[2])
     else:
-        return TextGenerationOutput(text = response.status_code)
+        return TextGenerationOutput(Text_Output_1 = response.status_code)
