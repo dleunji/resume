@@ -5,7 +5,7 @@
 ```
 What is Opyrator?
 Turns your machine learning code into microservices with web API, interactive GUI, and more.
-🪄  Turn functions into production-ready services within seconds.
+🦾  Turn functions into production-ready services within seconds.
 🔌  Auto-generated HTTP API based on **FastAPI**.
 🌅  Auto-generated Web UI based on **Streamlit**.
 📦  Save and share as self-contained executable file or Docker image.
@@ -13,7 +13,7 @@ Turns your machine learning code into microservices with web API, interactive GU
 📈  Instantly deploy and scale for production usage.
 ```
 
-[Opyrator](https://github.com/ml-tooling/opyrator)는 단 몇 줄로 이루어진 Python functions를 통해 단번에 간단한 서비스로 변신시켜줍니다. 이는 API를 매우 빠르게 빌드하는 강점을 지닌 **[FASTAPI](https://fastapi.tiangolo.com/)**와 Machine Learning에 특화되어 시각적으로 편리하게 보여주는 **[Streamlit](https://streamlit.io/)** 기반으로 구성된 오픈소스입니다.
+[Opyrator](https://github.com/ml-tooling/opyrator)는 단 몇 줄로 이루어진 Python functions를 통해 단번에 간단한 서비스로 변신시켜줍니다. 이는 API를 매우 빠르게 빌드하는 강점을 지닌 **[FASTAPI](https://fastapi.tiangolo.com/)** 와 Machine Learning에 특화되어 시각적으로 편리하게 보여주는 **[Streamlit](https://streamlit.io/)** 기반으로 구성된 오픈소스입니다.
 
 <img width="1552" alt="_2021-04-30__5 42 57" src="https://user-images.githubusercontent.com/46207836/116836686-7226f580-ac02-11eb-8489-281f799bbeb7.png">
 
@@ -25,7 +25,7 @@ Turns your machine learning code into microservices with web API, interactive GU
 
 ## 1. Brainstorming
 
-저는 기존에 Teachable NLP로 만든 모델 [Résumé For SW Developer](https://www.notion.so/R-sum-for-SW-Developers-23c719ec0d844cabb740fc603589f920) 을 활용하여 서비스를 만들어 보고자 합니다. text와 원하는 출력 길이를 입력하면 해당 text를 중심으로 3개의 후보 문장이 출력되어, 그 중 마음에 드는 문장을 고를 수 있도록 합니다.
+저는 기존에 Teachable NLP로 만든 모델 [Résumé For SW Developer](https://forum.ainetwork.ai/t/teachable-nlp-resume-for-sw-developers/89/2) 을 활용하여 서비스를 만들어 보고자 합니다. text와 원하는 출력 길이를 입력하면 해당 text를 중심으로 3개의 후보 문장이 출력되어, 그 중 마음에 드는 문장을 고를 수 있도록 합니다.
 
 <img width="1552" alt="_2021-05-01__7 58 11" src="https://user-images.githubusercontent.com/46207836/116836762-c92cca80-ac02-11eb-9cb9-44a700af596f.png">
 
