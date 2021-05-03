@@ -43,11 +43,11 @@ pip install opyrator
 
 ```
 ├────resume
-			├ app.py
-			├ requirements.txt
-			├ .dockerignore
-			├ .gitignore
-			├ Dockerfile
+    ├ app.py
+    ├ requirements.txt
+    ├ .dockerignore
+    ├ .gitignore
+    ├ Dockerfile
 ```
 
 ## 4. Models
