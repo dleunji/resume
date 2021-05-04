@@ -3,7 +3,7 @@ import requests, json
 from transformers import AutoTokenizer
 
 autoTokenizer = AutoTokenizer.from_pretrained("gpt2-large")
-url = 'https://train-an3ugzje9rw5ysaeq3s0-gpt2-train-teachable-ainize.endpoint.ainize.ai/predictions/gpt-2-en-medium-finetune'
+url = 'https://train-wrrhqlm5konh50zk93l1-gpt2-train-teachable-ainize.endpoint.ainize.ai/predictions/gpt-2-en-medium-finetune'
 
 class TextGenerationInput(BaseModel):
     text_input : str = Field(
