@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Resume Generator
 [![Run on Ainize](https://ainize.ai/images/run_on_ainize_button.svg)](https://master-resume-dleunji.endpoint.ainize.ai/)<br>
 
@@ -221,7 +222,7 @@ opyrator launch-api app:generate_resume
 
 ## 7. Wrap Up
 
-[opyrator](https://github.com/ml-tooling/opyrator)는 그동안 본인만의 API를 개발하고, 서비스를 개발하여도 웹사이트를 만들어야 한다는 부담감에 망설였던 개발자들에게 매우 유용한 오픈소스라고 생각합니다. 현재 opyrator 개발자께 직접 여쭤본 결과 꾸준히 기능을 추가하고 계시다고 하니, 앞으로 더욱 유용해질 것이라 기대됩니다.
+[Opyrator](https://github.com/ml-tooling/opyrator)는 그동안 본인만의 API를 개발하고, 서비스를 개발하여도 웹사이트를 만들어야 한다는 부담감에 망설였던 개발자들에게 매우 유용한 오픈소스라고 생각합니다. 현재 opyrator 개발자께 직접 여쭤본 결과 꾸준히 기능을 추가하고 계시다고 하니, 앞으로 더욱 유용해질 것이라 기대됩니다.
 
 저처럼 Teachable NLP와 ainize로 서비스를 간단하게 만들어, [포럼](https://forum.ainetwork.ai/c/ai-showcase/11)에서 여러분의 아이디어와 실력보여주세요:)
 
