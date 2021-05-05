@@ -1,4 +1,19 @@
-막상 처음부터 웹 서비스를 만드려고 하면 막막한 경우가 많습니다. 사실 많은 기능이 필요한 것이 아니라, 입력에 따른 출력만 나오는 간단한 웹 페이지 하나면 충분한데 말이죠.
+# Resume Generator
+[![Run on Ainize](https://ainize.ai/images/run_on_ainize_button.svg)](https://master-resume-dleunji.endpoint.ainize.ai/)<br>
+
+![resumes](https://user-images.githubusercontent.com/46207836/117151072-af060e80-adf3-11eb-9ccd-ddf585fe8c1a.jpg)
+만약 취업이나 이직을 준비하고 계시다면 **résumé** 쓰기는 피할 수 없습니다. résumé에는 지금까지의 자신만의 이력과 성취에 대해서 단 한 장에 간결하게 설명해야 합니다. 지금까지 코드와 고군분투하며 살아왔지만, 막상 résumé를 쓰려면 무얼, 어떻게 쓸지 막막해지기 쉽습니다.
+
+이처럼 코드 짜기보다 자신을 소개하는 글쓰기가 더 어려운 개발자들을 위해, **Teachable NLP**를 통해 résumé를 편리하게 생성하는 모델을 만들었습니다. 실제로 단 몇 분만에 제 résumé는 다음과 같이 완성되었습니다. 
+
+```
+- Creating Web RESTful API
+- Web Frontend with HTML, CSS
+- Taking part in preprocessing steps of machine learning mainly missing value treatment, outlier detection, encoding, scaling, feature selection.
+- Testing machine learn algorithms in python. optimizing of existing algorithms.
+```
+
+막상 처음부터 이러한 웹 서비스를 만드려고 하면 막막한 경우가 많습니다. 사실 많은 기능이 필요한 것이 아니라, 입력에 따른 출력만 나오는 간단한 웹 페이지 하나면 충분한데 말이죠.
 
 그러한 분들을 위한 오픈소스 **Opyrator**를 소개해드립니다. 🥳
 
