@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Resume Generator
 [![Run on Ainize](https://ainize.ai/images/run_on_ainize_button.svg)](https://master-resume-dleunji.endpoint.ainize.ai/)<br>
 
